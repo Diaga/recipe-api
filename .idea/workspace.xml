@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b4975d3a-ff9e-42a6-a25b-deceb4eb82e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/recipe/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/recipe/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/tests/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/tests/test_models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,24 +14,36 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/recipe/views.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/core/tests/test_models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="131">
+              <caret line="84" column="31" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
               <folding>
-                <element signature="e#0#43#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/recipe/tests/test_ingredients_api.py">
+        <entry file="file://$PROJECT_DIR$/app/core/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="335">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/core/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -73,13 +87,13 @@
         <option value="$PROJECT_DIR$/app/app/urls.py" />
         <option value="$PROJECT_DIR$/app/__init__.py" />
         <option value="$PROJECT_DIR$/app/recipe/tests/test_tags_api.py" />
-        <option value="$PROJECT_DIR$/app/core/tests/test_models.py" />
-        <option value="$PROJECT_DIR$/app/core/models.py" />
-        <option value="$PROJECT_DIR$/app/core/admin.py" />
         <option value="$PROJECT_DIR$/app/recipe/serializers.py" />
         <option value="$PROJECT_DIR$/app/recipe/urls.py" />
         <option value="$PROJECT_DIR$/app/recipe/tests/test_ingredients_api.py" />
         <option value="$PROJECT_DIR$/app/recipe/views.py" />
+        <option value="$PROJECT_DIR$/app/core/tests/test_models.py" />
+        <option value="$PROJECT_DIR$/app/core/models.py" />
+        <option value="$PROJECT_DIR$/app/core/admin.py" />
       </list>
     </option>
   </component>
@@ -110,14 +124,7 @@
               <item name="recipe-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="recipe-api" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="recipe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recipe-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recipe-api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="recipe" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -168,18 +175,18 @@
       <workItem from="1563875894758" duration="6068000" />
       <workItem from="1563933705566" duration="616000" />
       <workItem from="1563941348724" duration="1001000" />
-      <workItem from="1563944344695" duration="3959000" />
+      <workItem from="1563944344695" duration="4925000" />
+      <workItem from="1563956675889" duration="1434000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55659000" />
+    <option name="totallyTimeSpent" value="58059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2987897" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30332828" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -354,38 +361,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/tests/test_models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/core/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/recipe/tests/test_tags_api.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -417,22 +394,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/recipe/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="24" selection-start-line="24" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/recipe/tests/test_ingredients_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="335">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/recipe/views.py">
+    <entry file="file://$PROJECT_DIR$/app/core/tests/test_models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="131">
+          <caret line="84" column="31" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
