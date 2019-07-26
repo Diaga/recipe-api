@@ -128,8 +128,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
-STATIC_ROUTE = '/vol/web/static'
-MEDIA_ROUTE = '/vol/web/media'
+STATIC_ROOT = '/vol/web/static'
+MEDIA_ROOT = '/vol/web/media'
 
 
 # Declare custom user model
