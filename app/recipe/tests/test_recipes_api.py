@@ -239,8 +239,6 @@ class RecipeImageUploadTests(TestCase):
     def test_upload_image_valid(self):
         """Test uploading an image to recipe"""
         url = image_upload_url(self.recipe.id)
-        print(self.recipe.title)
-        print(url)
 
         with tempfile.NamedTemporaryFile(suffix='.jpg') as ntf:
             img = Image.new('RGB', (10, 10))
