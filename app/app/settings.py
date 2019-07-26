@@ -126,6 +126,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+
+STATIC_ROUTE = '/vol/web/static'
+MEDIA_ROUTE = '/vol/web/media'
+
 
 # Declare custom user model
 
