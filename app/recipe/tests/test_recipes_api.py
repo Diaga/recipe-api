@@ -222,6 +222,56 @@ class PrivateRecipeApiTests(TestCase):
 
         self.assertEqual(tags.count(), 0)
 
+    def test_filter_recipes_by_tags(self):
+        """Test returning recipes with specific tags"""
+        recipe_tag_1 = sample_recipe(user=self.user)
+        recipe_tag_2 = sample_recipe(user=self.user, title='Samosa')
+        recipe_no_tag = sample_recipe(user=self.user, title='Rice')
+
+        tag_1 = sample_tag(user=self.user)
+        tag_2 = sample_tag(user=self.user, name='Fried')
+
+        recipe_tag_1.tags.add(tag_1)
+        recipe_tag_2.tags.add(tag_2)
+
+        res = self.client.get(
+            RECIPES_URL,
+            {'tags': f'{tag_1.id},{tag_2.id}'}
+        )
+
+        serializer_1 = RecipeSerializer(recipe_tag_1)
+        serializer_2 = RecipeSerializer(recipe_tag_2)
+        serializer_no = RecipeSerializer(recipe_no_tag)
+
+        self.assertIn(serializer_1.data, res.data)
+        self.assertIn(serializer_2.data, res.data)
+        self.assertNotIn(serializer_no.data, res.data)
+
+    def test_filter_recipes_by_ingredients(self):
+        """Test filtering recipes by ingredients"""
+        recipe_ing_1 = sample_recipe(user=self.user)
+        recipe_ing_2 = sample_recipe(user=self.user, title='Chips')
+        recipe_ing_no = sample_recipe(user=self.user, title='Pizza')
+
+        ing_1 = sample_ingredient(user=self.user)
+        ing_2 = sample_ingredient(user=self.user, name='Potatoes')
+
+        recipe_ing_1.ingredients.add(ing_1)
+        recipe_ing_2.ingredients.add(ing_2)
+
+        res = self.client.get(
+            RECIPES_URL,
+            {'ingredients': f'{ing_1.id},{ing_2.id}'}
+        )
+
+        serializer_1 = RecipeSerializer(recipe_ing_1)
+        serializer_2 = RecipeSerializer(recipe_ing_2)
+        serializer_no = RecipeSerializer(recipe_ing_no)
+
+        self.assertIn(serializer_1.data, res.data)
+        self.assertIn(serializer_2.data, res.data)
+        self.assertNotIn(serializer_no.data, res.data)
+
 
 class RecipeImageUploadTests(TestCase):
 
